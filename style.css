@@ -10,31 +10,65 @@
   text-shadow: 1px 1px 20px black;
 }
 
-.slide1 {
-  background: url(background/macbook.jpg) no-repeat center fixed;
+header {
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.slide1 .inner_slide1 {
-  padding: 14vw;
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-.slide1 .inner_slide1 h1 {
-  font-weight: 500;
-  font-size: 4rem;
-  z-index: 2;
-}
-
-.slide1 .inner_slide1 h3 {
-  font-size: 2rem;
-}
-
-.slide1 .inner_menu {
-  position: fixed;
+header .content {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
   background-color: black;
-  right: 0;
+  opacity: 0.8;
+  padding: 1.5vw;
+  border-radius: 10px;
+}
+
+header .content h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+header .content h3 {
+  font-size: 1.5rem;
+}
+
+header .content i {
+  font-size: 1.5rem;
+  padding: 0.5vw;
+}
+
+header .arrow {
+  text-align: center;
+  bottom: 0 !important;
+}
+
+header .arrow img {
+  width: 4rem;
+  height: auto;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,27 +9,60 @@
     text-shadow: 1px 1px 20px black;
 }
 
-.slide1{
-	background: url(background/macbook.jpg) no-repeat center fixed;
-	width: 100%;
+header{
+    width: 100%;
     height: 100vh;
-	background-size: cover;
-	display: block;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .inner_slide1{
-        padding: 14vw;
-        h1{
-            font-weight: 500;
-            font-size: 4rem;
-            z-index: 2;
-        }
-        h3{
-            font-size: 2rem;
-        }
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
     }
-    .inner_menu{
-        position: fixed;
+
+    .content{
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        text-align: center;
         background-color: black;
-        right: 0;
+        opacity: 0.8;
+        padding: 1.5vw;
+        border-radius: 10px;
+
+        h1{
+            font-size: 4rem;
+            font-weight: 400;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        i{
+            font-size: 1.5rem;
+            padding: 0.5vw;
+        }
+        
+       
+    }
+
+    .arrow{
+        text-align: center;
+        bottom: 0 !important;
+        
+        img{
+            width: 4rem;
+            height: auto;
+            bottom: 0;
+           
+        }
     }
 }
