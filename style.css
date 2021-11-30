@@ -1,0 +1,33 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
+  text-shadow: 1px 1px 20px black;
+}
+
+.slide1 {
+  background: url(background/macbook.jpg) no-repeat center fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: block;
+}
+
+.slide1 .inner_slide1 {
+  padding: 14vw;
+}
+
+.slide1 .inner_slide1 h1 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.slide1 .inner_slide1 span {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
