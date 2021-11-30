@@ -357,3 +357,9 @@ footer{
   text-align: center;
   margin-top: -50px;
 }
+
+@media(max-width: 720px){
+    form{
+      width: 300px;
+    }
+}

@@ -386,4 +386,10 @@ footer .slide5 .inner_slide5 .inner_dane ol {
   text-align: center;
   margin-top: -50px;
 }
+
+@media (max-width: 720px) {
+  form {
+    width: 300px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
