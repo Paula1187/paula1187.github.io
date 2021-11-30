@@ -25,9 +25,10 @@
 .slide1 .inner_slide1 h1 {
   font-weight: 500;
   font-size: 4rem;
+  z-index: 2;
 }
 
-.slide1 .inner_slide1 span {
+.slide1 .inner_slide1 h3 {
   font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
