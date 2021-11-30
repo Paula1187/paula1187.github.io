@@ -1,4 +1,6 @@
 
+.icon-star:before { content: '\e800'; } /* '' */
+.icon-star-filled:before { content: '\e801'; } /* '' */
 .icon-right-open:before { content: '\e803'; } /* '' */
 .icon-left-open:before { content: '\e805'; } /* '' */
 .icon-phone-squared:before { content: '\f098'; } /* '' */

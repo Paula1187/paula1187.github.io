@@ -7,6 +7,7 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
     text-shadow: 1px 1px 20px black;
+    list-style-type: none;
 }
 
 header{
@@ -18,7 +19,7 @@ header{
     align-items: center;
 
     video{
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         object-fit: cover;
@@ -168,10 +169,191 @@ body{
 
 section{
     display: flex;
+    align-items: center;
+        justify-content: center;
     width: 100%;
-    height: 30vw;
+    height: auto;
     background-color: black;
+
     .o_mnie{
         color: white;
+        
+        p{
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+        b{
+            font-weight: 400;
+        }
+        span{
+            padding-top: 6vw;
+        }
     }
+
+    .umiejetnosci{
+        li{
+            margin-left: 2vw;
+            margin-bottom: 1vw;
+            min-width: 20vw;
+
+            span{
+              i{
+                color: violet;
+              }
+            }
+        }
+    }
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	transition: 1s background-size;
+
+    :link 
+    {
+        color: white;
+    }
+
+    :visited 
+    {
+    	color: white;
+    }
+
+    :hover {
+    	background-size: 100% .1em;
+    }
+}
+
+footer{
+  .slide5{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10vw;
+
+
+      .inner_slide5{
+        text-align: center;
+        padding-top: 6vw;
+        display: block;
+      
+
+          .form{
+            display: block;
+            width: 450px;
+            height: 480px;
+            float: left;
+            text-align: left;
+            margin-top: 30px;
+            padding: 40px 0 0 35px;
+            background-color: white;
+            text-shadow: none !important;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 1px 1px 20px black;
+          }
+
+          .form h2{
+            margin-bottom: 30px;
+            color: black;
+            letter-spacing: 1px;
+            text-shadow: none !important;
+          }
+
+          label{
+            text-shadow: none !important;
+
+          }
+
+          input{
+            width: 90%;
+            height: 40px;
+            background-color: transparent;
+            border-radius: 1px;
+            box-shadow: none;
+            border: 1px solid #9b00b0;
+            color: black;
+            padding-left: 4px;
+            font-family: arial !important;
+            text-shadow: none !important;
+          }
+
+          textarea{
+            width: 90%;
+            height: 100px;
+            background-color: transparent;
+            border-radius: 2px;
+            box-shadow: none;
+            border: 1px solid  #9b00b0;
+            color: black;
+            font-family: arial !important;
+            padding: 8px 5px 5px 5px;
+            text-shadow: none !important;
+          }
+
+
+          input.button{
+            width: 90%;
+            height: 50px;
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            border: 1px solid #9b00b0;
+            margin-bottom: 30px;
+            display: block;
+            transition: transform 1s, background-color 1s;
+            font-family: arial !important;
+            text-shadow: none !important;
+            background-color: #9b00b0;
+            float: left;
+          }
+
+          input.button:hover{
+            transform:  scale(1.1);
+            background-color: #9b00b0;
+          }
+
+          .dane{
+            display: block;
+            width: 450px;
+            height: auto;
+            float: left;
+            text-align: left;
+            margin-top: 10px;
+            padding: 40px 0 0 120px;
+            
+          }
+
+          .inner_dane img{
+            width: auto;
+            height: 25px;
+            margin-bottom: -5px;
+          }
+
+          .inner_dane p{
+            padding-left: 5px;
+          }
+
+          .inner_dane ol{
+            margin-left: 30px;
+          }
+        }
+   }
+}
+.footer{
+  background-color: #500085;
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  margin-top: -50px;
 }
