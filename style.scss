@@ -3,11 +3,11 @@
 	padding: 0;
 	text-decoration: none;
 	color: white;
-    box-sizing: border-box;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 100;
-    text-shadow: 1px 1px 20px black;
-    list-style-type: none;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
+  text-shadow: 1px 1px 20px black;
+  list-style-type: none;
 }
 
 header{
@@ -17,24 +17,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(background/macbook.jpg) no-repeat center fixed;
+    background-size: cover;
 
-    video{
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-    }
-
+    
     .content{
         position: relative;
         z-index: 1;
         margin: 0 auto;
         text-align: center;
-        background-color: black;
-        opacity: 0.8;
         padding: 1.5vw;
         border-radius: 10px;
 
@@ -66,6 +57,76 @@ header{
            
         }
     }
+
+    
+
+    .loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      margin-top: -3vw;
+      width: 25vw;
+      height: 25vw;
+      border-radius: 50%;
+      background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+      animation: animate 2s linear infinite;
+    }
+    @keyframes animate {
+      from {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+      }
+    }
+    
+    .loader:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+      background: black;
+      border-radius: 50%;
+      z-index: 1000;
+    }
+    
+    .loader:after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+      border-radius: 50%;
+      z-index: 1000;
+      z-index: 1;
+      filter: blur(3px);
+    }
+}
+@media(max-width: 1060px){
+  header{
+    .loader{
+      width: 50vw;
+      height: 50vw;
+      margin-top: -3vw;
+    }
+  }
+}
+
+@media(max-width: 720px){
+  header{
+    .loader{
+      width: 50vw;
+      height: 50vw;
+      margin-top: -34vw;
+    }
+  }
 }
 
 
@@ -148,7 +209,7 @@ body{
   
   .hamburger #menu {
     position: absolute;
-    width: 250px;
+    width: 300px;
     height: 107vh;
     margin: -100px 0 0 -50px;
     padding: 50px;
@@ -167,42 +228,10 @@ body{
   }
 }
 
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: black;
 
-    .o_mnie{
-        color: white;
-        
-        p{
-            font-size: 12px;
-            letter-spacing: 2px;
-        }
-        b{
-            font-weight: 400;
-        }
-        span{
-            padding-top: 6vw;
-        }
-    }
 
-    .umiejetnosci{
-        li{
-            margin-left: 2vw;
-            margin-bottom: 1vw;
-            min-width: 20vw;
-
-            span{
-              i{
-                color: violet;
-              }
-            }
-        }
-    }
+@media(max-widht:720px){
+ 
 }
 
 html, body {
@@ -211,8 +240,7 @@ html, body {
 
 a{
     text-decoration: none;
-	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
-	transition: 1s background-size;
+	  transition: transform 1s;
 
     :link 
     {
@@ -225,7 +253,8 @@ a{
     }
 
     :hover {
-    	background-size: 100% .1em;
+      transform: scale(1.1);
+      color: #d60aff;
     }
 }
 

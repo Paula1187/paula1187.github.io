@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/fontello.css">
-    <script src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,18 +37,26 @@
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#o_mnie"><li>O mnie</li></a>
-            <a href="#o_mnie"><li>Technologie</li></a>
-            <a href="#kontakt"><li>Kontakt</li></a>
+            <a href="#"><li><i class="icon-home"></i>&nbsp;Home</li></a>
+            <a href="#"><li><i class="icon-user"></i>&nbsp;O mnie</li></a>
+            <a href="#"><li><i class="icon-folder"></i>&nbsp;Projekty</li></a>
+            <a href="#"><li><i class="icon-html5"></i>&nbsp;Technologie</li></a>
+            <a href="#kontakt"><li><i class="icon-phone"></i>&nbsp;Kontakt</li></a>
           </ul>
         </div>
       </nav>
+      <script>
+        const input = document.querySelector("#menuToggle input");
+        const allA = document.querySelectorAll("#menu a");
+        for(const a of allA){
+            a.onclick = () => {
+            input.checked = false;
+            }
+        }
+    </script>
     <header>
+        <div class="loader"></div>
         <div class="slide1" >
-           <video autoplay muted loop>
-                <source src="background/light.mp4" type="video/mp4">
-           </video>
            <div class="content">
                <h1 data-aos="fade-up" data-aos-duration="3000">Front-End Developer</h1>
                <h3 data-aos="fade-up" data-aos-duration="3000">Paulina Lichowicz</h3>
@@ -66,103 +73,10 @@
         </div>
     </header>
     <a name="o_mnie"></a>
-    <section>
-        <div class="o_mnie">
-            <p>kilka słów o mnie</p>
-            <h1>Paulina Lichowicz <b>Front-End Developer</b></h1><br><br>
-            <span>Od roku zajmuję się tworzeniem stron internetowych.<br>
-            Uwielbiam się tym zajmować, gdyż jest to rzecz przy której puścić wodzę wyobraźni.<br>
-            Dodatkowo podoba mi się fakt że odrazu widać efekty mojej pracy. <br><br><br>
-            Co prawda dalej uczę się tego robić, lecz wiem że chce wiązać przyszłość własnie z tworzeniem stron internetowych. </span>
-        </div>
-        <div class="umiejetnosci">
-            <br><br><h3>Główne technologie:</h3><br>
-            <ul>
-                <li>HTML 
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                    </span>
-                </li>
-                <li>CSS
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                    </span>
-                </li>
-                <li>SEO
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star"></i>
-                    </span>
-                </li>
-                <li>UX Design
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star"></i>
-                    </span>
-                </li>
-                <li>Wordpress
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star"></i>
-                        
-                    </span>
-                </li>
-            </ul>
-            <br><br><h3>Inne technologie:</h3><br>
-            <ul>
-                <li>MySQL
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star"></i>
-                    </span>
-                </li>
-                <li>PHP
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star"></i>
-                        <i class="icon-star"></i>
-                        <i class="icon-star"></i>
-                        
-                    </span>
-                </li>
-                <li>JavaScript
-                    <span>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star-filled"></i>
-                        <i class="icon-star"></i>
-                        <i class="icon-star"></i>
-                        <i class="icon-star"></i>
-                    </span>
-                </li>
-            </ul><br><br>
-        </div>
-    </section>
-
-    <footer>
-    <a name="kontakt"></a>
-	
-    </footer>
+  <div class="slide2">
+          
+      </div>
+  </div>
 
 
 </body>

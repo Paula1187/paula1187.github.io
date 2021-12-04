@@ -1,8 +1,19 @@
 
 .icon-star:before { content: '\e800'; } /* '' */
 .icon-star-filled:before { content: '\e801'; } /* '' */
+.icon-home:before { content: '\e802'; } /* '' */
 .icon-right-open:before { content: '\e803'; } /* '' */
+.icon-star-1:before { content: '\e804'; } /* '' */
 .icon-left-open:before { content: '\e805'; } /* '' */
+.icon-star-empty:before { content: '\e806'; } /* '' */
+.icon-star-half:before { content: '\e807'; } /* '' */
+.icon-user:before { content: '\e808'; } /* '' */
+.icon-folder:before { content: '\e809'; } /* '' */
+.icon-phone:before { content: '\e80a'; } /* '' */
 .icon-phone-squared:before { content: '\f098'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-star-half-alt:before { content: '\f123'; } /* '' */
+.icon-html5:before { content: '\f13b'; } /* '' */
+.icon-user-plus:before { content: '\f234'; } /* '' */
+.icon-user-times:before { content: '\f235'; } /* '' */
