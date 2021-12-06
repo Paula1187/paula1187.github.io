@@ -289,10 +289,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body{
 a{
-    text-decoration: none;
-	  transition: transform 1s;
-
+	  transition-property: color;
+    transition-duration: 1s;  
     :link 
     {
         color: white;
@@ -302,12 +302,14 @@ a{
     {
     	color: white;
     }
-
     :hover {
-      transform: scale(1.1);
-      color: #d60aff;
-    }
+      color: white;
+    }  
 }
+}
+
+
+
 
 
 
