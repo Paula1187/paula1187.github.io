@@ -11,6 +11,115 @@
   list-style-type: none;
 }
 
+body {
+  background-color: black;
+}
+
+@-webkit-keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+            transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+            transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+@keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+            transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+            transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+body .waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+body .waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #86377b), color-stop(80%, #27273c));
+  background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+
+body .bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+body .bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+
+body .bgBottom {
+  z-index: 5;
+}
+
+body .wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+body .waveTop {
+  background-size: 50% 100px;
+}
+
+body .waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+body .waveMiddle {
+  background-size: 50% 120px;
+}
+
+body .waveAnimation .waveMiddle {
+  -webkit-animation: move_wave 10s linear infinite;
+          animation: move_wave 10s linear infinite;
+}
+
+body .waveBottom {
+  background-size: 50% 100px;
+}
+
+body .waveAnimation .waveBottom {
+  -webkit-animation: move_wave 15s linear infinite;
+          animation: move_wave 15s linear infinite;
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -24,8 +133,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(background/macbook.jpg) no-repeat center fixed;
-  background-size: cover;
+  background-color: black;
 }
 
 header .content {
@@ -116,8 +224,7 @@ header .loader:before {
   right: 20px;
   bottom: 20px;
   left: 20px;
-  background: url(background/macbook.jpg) no-repeat center fixed;
-  background-size: cover;
+  background-color: black;
   border-radius: 50%;
   z-index: 2;
 }
@@ -135,24 +242,8 @@ header .loader:after {
   z-index: 1;
   -webkit-filter: blur(3px);
           filter: blur(3px);
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
-}
-
-@media (max-width: 1060px) {
-  header .loader {
-    width: 50vw;
-    height: 50vw;
-    margin-top: -3vw;
-  }
-}
-
-@media (max-width: 720px) {
-  header .loader {
-    width: 50vw;
-    height: 50vw;
-    margin-top: -34vw;
-  }
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
 }
 
 body .hamburger {
@@ -292,5 +383,58 @@ a :hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #d60aff;
+}
+
+body main {
+  height: 100vh;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+body main p {
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+}
+
+body main b {
+  font-weight: 400;
+}
+
+body main h1 {
+  font-size: 2.5rem;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 180%, from(transparent), color-stop(0.25, transparent), to(white));
+}
+
+body main span {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1060px) {
+  header .loader {
+    width: 50vw;
+    height: 50vw;
+    margin-top: -3vw;
+  }
+}
+
+@media (max-width: 720px) {
+  header .loader {
+    width: 50vw;
+    height: 50vw;
+    margin-top: -34vw;
+  }
+  body main .text h1 {
+    font-size: 2rem;
+    -webkit-box-reflect: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */
