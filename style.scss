@@ -23,7 +23,7 @@ header{
     
     .content{
         position: relative;
-        z-index: 1;
+        z-index: 2;
         margin: 0 auto;
         text-align: center;
         padding: 1.5vw;
@@ -53,7 +53,8 @@ header{
         img{
             width: 4rem;
             height: auto;
-            bottom: 0;
+            z-index: 3;
+
            
         }
     }
@@ -70,7 +71,7 @@ header{
       height: 25vw;
       border-radius: 50%;
       background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
-      animation: animate 2s linear infinite;
+      
     }
     @keyframes animate {
       from {
@@ -86,13 +87,14 @@ header{
     .loader:before {
       content: '';
       position: absolute;
-      top: 10px;
-      right: 10px;
-      bottom: 10px;
-      left: 10px;
-      background: black;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      background: url(background/macbook.jpg) no-repeat center fixed;
+      background-size: cover;
       border-radius: 50%;
-      z-index: 1000;
+      z-index: 2;
     }
     
     .loader:after {
@@ -107,6 +109,7 @@ header{
       z-index: 1000;
       z-index: 1;
       filter: blur(3px);
+      animation: animate 2s linear infinite;
     }
 }
 @media(max-width: 1060px){
@@ -137,7 +140,7 @@ body{
     left: 0;
     top: 0;
     padding: 25px;
-    z-index: 2;
+    z-index: 10;
   }
   
   .hamburger #menuToggle {
@@ -210,7 +213,7 @@ body{
   .hamburger #menu {
     position: absolute;
     width: 300px;
-    height: 107vh;
+    height: 110vh;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
