@@ -439,16 +439,42 @@ body{
       bottom: 5vw;
       left: 5vw;
     }
+    .content{
+      h1{
+        font-size: 9vw !important;
+      }
+      h3{
+        font-size: 5vw;
+      }
+      h4 i{
+        font-size: 4vw;
+      }
+    }
   }
   body{
     main{
       .text{
+        p{
+          font-size: 2vw;
+        }
         h1{
-          font-size: 2rem;
+          font-size: 6vw;
           -webkit-box-reflect: unset;
+        }
+        span{
+          font-size: 3.5vw;
+        }
+        a{
+          font-size: 3.5vw;
         }
       }
     }
+    .projects{
+      height: 23vh;
+    }
+  }
+  #particles-js {
+    height: 23vh !important;
   }
 }
 
@@ -485,6 +511,9 @@ body{
         span{
           font-size: 4.5vw;
         }
+        a{
+          font-size: 4vw;
+        }
       }
     }
     
@@ -509,23 +538,47 @@ body{
         
       }
     }
+    .bottom{
+      height: 30vh !important;
+    }
   }
   #particles-js{
    display: none;
   }
 
   footer{
+    height: auto;
     .inner_footer{
-      display: inline;
+      display:grid !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "b2"
+    "b1"
+    ;
+    width: 100%;
       form{
-        min-height: 100%;
         input{
-          font-size: 4.5vw;
+          font-size: 10.5vw;
+        }
+      }
+      .contact{
+        .inner_contact{
+          h1{
+            font-size: 5vw;
+          }
         }
       }
     }
+    .inner_footer a:nth-child(1){grid-area:b1;}
+.inner_footer a:nth-child(2){grid-area:b2;}
   }
   
+  .copy{
+    span{
+      font-size: 3vw !important;
+    }
+  }
 }
 
 

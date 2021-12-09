@@ -531,9 +531,33 @@ body main a {
     bottom: 5vw;
     left: 5vw;
   }
+  header .content h1 {
+    font-size: 9vw !important;
+  }
+  header .content h3 {
+    font-size: 5vw;
+  }
+  header .content h4 i {
+    font-size: 4vw;
+  }
+  body main .text p {
+    font-size: 2vw;
+  }
   body main .text h1 {
-    font-size: 2rem;
+    font-size: 6vw;
     -webkit-box-reflect: unset;
+  }
+  body main .text span {
+    font-size: 3.5vw;
+  }
+  body main .text a {
+    font-size: 3.5vw;
+  }
+  body .projects {
+    height: 23vh;
+  }
+  #particles-js {
+    height: 23vh !important;
   }
 }
 
@@ -564,6 +588,9 @@ body main a {
   body main .text span {
     font-size: 4.5vw;
   }
+  body main .text a {
+    font-size: 4vw;
+  }
   body .projects {
     display: inline;
     text-align: center;
@@ -584,17 +611,43 @@ body main a {
     margin-top: 8vw;
     left: 0 !important;
   }
+  body .bottom {
+    height: 30vh !important;
+  }
   #particles-js {
     display: none;
   }
-  footer .inner_footer {
-    display: inline;
+  footer {
+    height: auto;
   }
-  footer .inner_footer form {
-    min-height: 100%;
+  footer .inner_footer {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "b2" "b1";
+    width: 100%;
   }
   footer .inner_footer form input {
-    font-size: 4.5vw;
+    font-size: 10.5vw;
+  }
+  footer .inner_footer .contact .inner_contact h1 {
+    font-size: 5vw;
+  }
+  footer .inner_footer a:nth-child(1) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: b1;
+  }
+  footer .inner_footer a:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: b2;
+  }
+  .copy span {
+    font-size: 3vw !important;
   }
 }
 
