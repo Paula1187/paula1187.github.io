@@ -147,15 +147,15 @@ header .content {
 }
 
 header .content h1 {
-  font-size: 4rem;
+  font-size: 4vw;
 }
 
 header .content h3 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 header .content i {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   padding: 0.5vw;
 }
 
@@ -221,10 +221,10 @@ header .loader {
 header .loader:before {
   content: '';
   position: absolute;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
+  top: 2vw;
+  right: 2vw;
+  bottom: 2vw;
+  left: 2vw;
   background-color: black;
   border-radius: 50%;
   z-index: 2;
@@ -344,7 +344,6 @@ body .hamburger #menu {
   padding: 50px;
   padding-top: 125px;
   background: black;
-  opacity: 0.7;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0% 0%;
@@ -373,21 +372,21 @@ body a {
           transition-duration: 1s;
 }
 
-body a :link {
+body a a:link {
   color: white;
 }
 
-body a :visited {
+body a a:visited {
   color: white;
 }
 
-body a :hover {
+body a a:hover {
   color: white;
 }
 
 /*description*/
 body main {
-  height: 130vh;
+  height: 100vh;
   width: 60%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -402,8 +401,8 @@ body main {
 }
 
 body main p {
-  letter-spacing: 3px;
-  font-size: 0.7rem;
+  letter-spacing: 4px;
+  font-size: 0.9vw;
 }
 
 body main b {
@@ -411,34 +410,112 @@ body main b {
 }
 
 body main h1 {
-  font-size: 2.5rem;
+  font-size: 3vw;
   -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 180%, from(transparent), color-stop(0.25, transparent), to(white));
 }
 
 body main span {
-  font-size: 1.3rem;
+  font-size: 1.5vw;
 }
 
-body main .projects {
+body main a {
+  border: 1px solid white;
+  padding: 0.5vw 3vw;
+}
+
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #27273c;
+  width: 100%;
+  height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body main .projects .project {
-  height: 11vw;
-  width: 20vw;
-  margin: 1vw;
+.projects .text {
+  width: 20%;
+  height: 100%;
+  background-color: #86377b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 !important;
+}
+
+.projects .text span {
+  display: block;
+  text-transform: uppercase;
+  width: 5vw;
+  font-size: 4vw;
+  line-height: auto;
+  text-align: center;
+  padding: 5px;
+  border: 4px solid #612759;
+  word-wrap: break-word;
+  font-weight: 400;
+  z-index: 3;
+}
+
+.projects .text p {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.projects .project1, .projects .project2, .projects .project3 {
+  height: 13vw;
+  width: 23.5vw;
+  margin: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+  background-color: black;
+  text-align: center;
+  color: transparent;
+  left: 10%;
+  z-index: 2;
 }
 
-body main .projects .project :hover {
-  background-color: violet;
-  z-index: 2;
+.projects .project1 a, .projects .project2 a, .projects .project3 a {
+  height: 100%;
+  width: 100%;
+}
+
+.projects .project1 {
+  background-image: url(sites/zorex.JPG);
+  background-size: cover;
+}
+
+.projects .project2 {
+  background-image: url(sites/mich-tech.JPG);
+  background-size: cover;
+}
+
+.projects .project3 {
+  background-image: url(sites/kredyty_lux.JPG);
+  background-size: cover;
+}
+
+.projects .project1:hover, .projects .project2:hover, .projects .project3:hover {
   opacity: 0.3;
 }
 
@@ -447,6 +524,12 @@ body main .projects .project :hover {
     width: 50vw;
     height: 50vw;
     margin-top: -3vw;
+  }
+  header .loader:before {
+    top: 5vw;
+    right: 5vw;
+    bottom: 5vw;
+    left: 5vw;
   }
   body main .text h1 {
     font-size: 2rem;
@@ -460,16 +543,196 @@ body main .projects .project :hover {
     height: 50vw;
     margin-top: -34vw;
   }
+  header .content h1 {
+    font-size: 15vw !important;
+  }
+  header .content h3 {
+    font-size: 8vw;
+  }
+  header .content h4 i {
+    font-size: 6vw;
+  }
   body main {
-    height: 200vh;
+    height: 100vh;
   }
-  body main .projects {
-    display: unset;
+  body main .text p {
+    font-size: 2vw;
   }
-  body main .projects .project {
+  body main .text h1 {
+    font-size: 6vw;
+  }
+  body main .text span {
+    font-size: 4.5vw;
+  }
+  body .projects {
+    display: inline;
+    text-align: center;
+    height: 120vh;
+  }
+  body .projects .text {
     width: 100%;
-    height: 35vw;
-    margin-top: 4vw;
   }
+  body .projects .text span {
+    width: 60%;
+    font-size: 6vw;
+    margin: 1vw 0;
+    letter-spacing: 5px;
+  }
+  body .projects .project1, body .projects .project2, body .projects .project3 {
+    height: 50vw;
+    min-width: 97%;
+    margin-top: 8vw;
+    left: 0 !important;
+  }
+  #particles-js {
+    display: none;
+  }
+  footer .inner_footer {
+    display: inline;
+  }
+  footer .inner_footer form {
+    min-height: 100%;
+  }
+  footer .inner_footer form input {
+    font-size: 4.5vw;
+  }
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 80%;
+  height: 60vh;
+  z-index: 1;
+  right: 0;
+}
+
+footer {
+  width: 100%;
+  height: 80vh;
+}
+
+footer .inner_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  padding-top: 15vw;
+}
+
+footer .inner_footer form {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2vw 2vw 3vw 2vw;
+  text-shadow: unset;
+  width: 80%;
+  min-height: 30vw;
+}
+
+footer .inner_footer form input {
+  width: 100%;
+  border: transparent;
+  text-shadow: none !important;
+  padding: 0.5vw;
+  border-bottom: 1px solid black;
+  font-size: 1.3vw;
+}
+
+footer .inner_footer form textarea {
+  width: 100%;
+  text-shadow: none !important;
+  padding: 0.5vw;
+  border: 1px solid black;
+  font-size: 1.3vw;
+}
+
+footer .inner_footer form input.button {
+  background-color: #3b3b5c;
+  padding: 0.5vw;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, -webkit-transform 1s;
+  transition: transform 1s, background-color 1s;
+  transition: transform 1s, background-color 1s, -webkit-transform 1s;
+  border-radius: 10px;
+  font-size: 1.3vw;
+}
+
+footer .inner_footer form input.button:hover {
+  background-color: #1f1f30;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer .inner_footer form h2 {
+  color: black;
+  font-size: 2vw;
+  font-weight: 400;
+  text-shadow: none !important;
+}
+
+footer .inner_footer form .inner_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .inner_footer .contact {
+  margin-top: -12vw;
+  width: 50%;
+}
+
+footer .inner_footer .contact .inner_contact h1 {
+  font-size: 3vw;
+  font-weight: 400;
+}
+
+footer .inner_footer .contact .inner_contact p {
+  font-size: 1.3vw;
+}
+
+footer .inner_footer .contact .inner_contact a {
+  font-size: 1.3vw;
+}
+
+footer .inner_footer .contact .inner_contact ol li {
+  margin-top: 0.8vw;
+}
+
+.bottom {
+  width: 100%;
+  height: 65vh;
+  background-color: #612759;
+  margin-top: -35vh;
+}
+
+.copy {
+  width: 100%;
+  background-color: black;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copy span {
+  font-size: 1vw;
 }
 /*# sourceMappingURL=style.css.map */
