@@ -556,6 +556,28 @@ body main a {
   body .projects {
     height: 23vh;
   }
+  footer .inner_footer form {
+    width: 100% !important;
+    min-height: 40vw !important;
+    padding: 5vw 3vw 4vw 3vw !important;
+  }
+  footer .inner_footer .contact .inner_contact h1 {
+    font-size: 3.7vw !important;
+  }
+  footer .inner_footer .contact .inner_contact p {
+    font-size: 1.5vw !important;
+  }
+  footer .inner_footer .contact .inner_contact a {
+    font-size: 2vw !important;
+    padding-top: 0.8vw !important;
+  }
+  .bottom {
+    height: 30vh !important;
+    margin-top: -59vh !important;
+  }
+  .copy span {
+    font-size: 2.5vw !important;
+  }
   #particles-js {
     height: 23vh !important;
   }
@@ -610,9 +632,6 @@ body main a {
     min-width: 97%;
     margin-top: 8vw;
     left: 0 !important;
-  }
-  body .bottom {
-    height: 30vh !important;
   }
   #particles-js {
     display: none;
