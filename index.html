@@ -24,6 +24,11 @@
     <meta name="og:description" content="FrontEnd Portfolio Paulina Lichowicz">
     <meta name="og:image" content="https://paula1187.github.io/img/logo.png">
 
+    <!--slider links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 </head>
 <body>
     <div class="waveWrapper waveAnimation">
@@ -107,25 +112,45 @@
 <a name="projekty"></a>
 <div id="particles-js"></div>
 <div class="projects">
-<a name="projekty"></a>
+    <a name="projekty"></a>
     
        
-   <div class="text"><span data-aos="fade-right"> PROJEKTY</span></div>
-   
-    <div class="project1" >
-        <a href="https://autoskup-zorex.pl/" target="_blank" ></a>
+   <div class="text"><span data-aos="fade-right"> <p>PROJEKTY</p></span></div>
+   <div class="upper_slider">
+        <div class="slider">
+            <div class="project" >
+                <a href="https://autoskup-zorex.pl/" target="_blank" ><img src="sites/zorex.JPG" alt=""></a>
+            </div>
+            <div class="project">
+                <a href="https://mich-tech.pl/" target="_blank"><img src="sites/mich-tech.JPG" alt=""></a>
+            </div>
+            <div class="project">
+                <a href="https://www.kredytylux.pl/" target="_blank"><img src="sites/kredyty_lux.JPG" alt=""></a>
+            </div>
+            </div>
+        </div>
     </div>
-    <div class="project2">
-        <a href="https://mich-tech.pl/" target="_blank"></a>
-    </div>
-    <div class="project3">
-        <a href="https://www.kredytylux.pl/" target="_blank"></a>
-    </div>
-</div>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			<script type="text/javascript">
+ 				$('.slider').slick({
+				  infinite: true,
+				   autoplay: true,
+  					autoplaySpeed: 3000,
+				  slidesToShow: 1,
+				  centerMode: true,
+				  variableWidth: true
+				});
+
+     
+			</script>
+
  
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
 
 
 <script>
@@ -247,7 +272,7 @@
         <div class="form">
             <div class="inner_form">
                 
-                <form action="https://formsubmit.io/send/lichowicz.paulina@gmail.com" method="POST">
+                <form action="https://formsubmit.io/send/lichowicz.paulina@gmail.com" method="POST"><br>
                     <h2>FORMULARZ KONTAKTOWY</h2>
                     <label for="mail"></label><br>
 
@@ -263,17 +288,17 @@
 
                     <input name="_formsubmit_id" type="text" style="display:none"><br><br>
 
-                    <input value="Wyślij" type="submit" class="button">
+                    <input value="Wyślij" type="submit" class="button"><br><br><br>
                 </form>
             </div>
         </div>
         <div class="contact">
             <div class="inner_contact">
                 <h1 data-aos="fade-up" data-aos-duration="3000">Zapraszam do kontaktu</h1>
-                <p data-aos="fade-up" data-aos-duration="3000">Jeśliby mieli Państwo jakiekolwiek pytania zachęcam do kontaktu telefonicznie, mailowo lub poprzez formularz kontaktowy.</p><br><br>
+                <p data-aos="fade-up" data-aos-duration="3000">Jeśliby mieli Państwo jakiekolwiek pytania zachęcam do kontaktu telefonicznie, mailowo lub poprzez formularz kontaktowy.</p><br>
                 <ol data-aos="fade-up" data-aos-duration="3000">
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:lichowicz.paulina@gmail.com"> <i class="icon-mail-alt"></i>&nbsp;lichowicz.paulina@gmail.com</a></li>
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+48531169975"><i class="icon-phone"></i>&nbsp;+48 531 169 975</a></li>
+                    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="mailto:lichowicz.paulina@gmail.com"> <i class="icon-mail-alt"></i>&nbsp;lichowicz.paulina@gmail.com</a></li>
+                    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="tel:+48531169975"><i class="icon-phone"></i>&nbsp;+48 531 169 975</a></li>
                 </ol>
             </div>
         </div>
@@ -285,6 +310,8 @@
 <div class="copy">
     <span>Created by Paulina Lichowicz &copy; Wszelkie prawa zastrzeżone</span>
 </div>
+
+
 
 </body>
 </html>
