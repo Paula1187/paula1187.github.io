@@ -559,12 +559,29 @@ body{
         .form{
           .inner_form{
             width: 100%;
+            form{
+              input{
+                margin-top: 10px;
+              }
+              textarea{
+                margin-top: 10px;
+              }
+            }
           }
         }
         .contact{
           .inner_contact
           {
-            padding-top: 35px;
+            padding-top: 40px;
+            h1{
+              font-size: 8vw;
+            }
+            p{
+              font-size: 4vw;
+            }
+            a{
+              font-size: 4vw;
+            }
             ol{
               li{
                 padding-top: 8px;
@@ -579,8 +596,8 @@ body{
     }
     .bottom{
       margin-top: 0 !important;
-      height: 100vh !important;
-      margin-top: -100vh !important;
+      height: 600px !important;
+      margin-top: -300px !important;
     }
   }
   
@@ -604,10 +621,32 @@ body{
       "b1"
       !important;
       width: 100%;
+      .form{
+        .inner_form{
+          form{
+            h2{
+              font-size: 8vw !important;
+            }
+            input{
+              font-size: 4vw !important;
+            }
+            .button{
+              font-size: 4vw !important;
+            }
+            textarea{
+              font-size: 4vw !important;
+            }
+          }
+        }
+      }
       
     }
     .inner_footer a:nth-child(1){grid-area:b1;}
 .inner_footer a:nth-child(2){grid-area:b2;}
+  }
+
+  .bottom{
+    margin-top: 0;
   }
   
   .copy{
@@ -640,6 +679,7 @@ footer{
   height: 100vh;
   .inner_footer{
     display:grid !important;
+    height: 80vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr ;
     grid-template-areas: 
@@ -660,17 +700,20 @@ footer{
           text-shadow: 0;
           h2{
             color: black;
+            font-size: 2vw;
           }
           input{
             width: 80%;
             border-color: transparent;
             border-bottom: 1px  solid black;
+            font-size: 1vw;
           }
           .button{
             background-color: #33334e;
             transition: background-color 1s, transform 1s;
             padding: 3px 0;
             border-radius: 10px;
+            font-size: 1vw;
           }
           .button:hover{
           background-color: #27273b;
@@ -679,6 +722,7 @@ footer{
           textarea{
             width: 80%;
             border: 1px solid black;
+            font-size: 1vw;
           }
         }
       }
@@ -687,6 +731,15 @@ footer{
       .inner_contact
       {
         padding-top: 35px;
+        h1{
+          font-size: 3vw;
+        }
+        p{
+          font-size: 1.2vw;
+        }
+        a{
+          font-size: 1.2vw;
+        }
         ol{
           li{
             padding-top: 5px;

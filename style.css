@@ -631,8 +631,23 @@ body main a {
   body footer .inner_footer .form .inner_form {
     width: 100%;
   }
+  body footer .inner_footer .form .inner_form form input {
+    margin-top: 10px;
+  }
+  body footer .inner_footer .form .inner_form form textarea {
+    margin-top: 10px;
+  }
   body footer .inner_footer .contact .inner_contact {
-    padding-top: 35px;
+    padding-top: 40px;
+  }
+  body footer .inner_footer .contact .inner_contact h1 {
+    font-size: 8vw;
+  }
+  body footer .inner_footer .contact .inner_contact p {
+    font-size: 4vw;
+  }
+  body footer .inner_footer .contact .inner_contact a {
+    font-size: 4vw;
   }
   body footer .inner_footer .contact .inner_contact ol li {
     padding-top: 8px;
@@ -642,8 +657,8 @@ body main a {
   }
   body .bottom {
     margin-top: 0 !important;
-    height: 100vh !important;
-    margin-top: -100vh !important;
+    height: 600px !important;
+    margin-top: -300px !important;
   }
   #particles-js {
     margin-top: 60px;
@@ -664,6 +679,18 @@ body main a {
         grid-template-areas: "b2" "b1" !important;
     width: 100%;
   }
+  footer .inner_footer .form .inner_form form h2 {
+    font-size: 8vw !important;
+  }
+  footer .inner_footer .form .inner_form form input {
+    font-size: 4vw !important;
+  }
+  footer .inner_footer .form .inner_form form .button {
+    font-size: 4vw !important;
+  }
+  footer .inner_footer .form .inner_form form textarea {
+    font-size: 4vw !important;
+  }
   footer .inner_footer a:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -673,6 +700,9 @@ body main a {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: b2;
+  }
+  .bottom {
+    margin-top: 0;
   }
   .copy span {
     font-size: 3vw !important;
@@ -713,6 +743,7 @@ footer {
 footer .inner_footer {
   display: -ms-grid !important;
   display: grid !important;
+  height: 80vh;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
@@ -741,12 +772,14 @@ footer .inner_footer .form .inner_form form {
 
 footer .inner_footer .form .inner_form form h2 {
   color: black;
+  font-size: 2vw;
 }
 
 footer .inner_footer .form .inner_form form input {
   width: 80%;
   border-color: transparent;
   border-bottom: 1px  solid black;
+  font-size: 1vw;
 }
 
 footer .inner_footer .form .inner_form form .button {
@@ -757,6 +790,7 @@ footer .inner_footer .form .inner_form form .button {
   transition: background-color 1s, transform 1s, -webkit-transform 1s;
   padding: 3px 0;
   border-radius: 10px;
+  font-size: 1vw;
 }
 
 footer .inner_footer .form .inner_form form .button:hover {
@@ -768,10 +802,23 @@ footer .inner_footer .form .inner_form form .button:hover {
 footer .inner_footer .form .inner_form form textarea {
   width: 80%;
   border: 1px solid black;
+  font-size: 1vw;
 }
 
 footer .inner_footer .contact .inner_contact {
   padding-top: 35px;
+}
+
+footer .inner_footer .contact .inner_contact h1 {
+  font-size: 3vw;
+}
+
+footer .inner_footer .contact .inner_contact p {
+  font-size: 1.2vw;
+}
+
+footer .inner_footer .contact .inner_contact a {
+  font-size: 1.2vw;
 }
 
 footer .inner_footer .contact .inner_contact ol li {
