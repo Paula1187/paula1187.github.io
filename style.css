@@ -710,7 +710,7 @@ body main a {
   .copy span {
     font-size: 3vw !important;
   }
-  header .slide1 .content .button a {
+  header .slide1 .content .inner_button .button a {
     background-color: #33334e;
     -webkit-transition: background-color 1s, -webkit-transform 1s;
     transition: background-color 1s, -webkit-transform 1s;
@@ -720,12 +720,12 @@ body main a {
     border-radius: 10px;
     font-size: 10vw !important;
   }
-  header .slide1 .content .button a:hover {
+  header .slide1 .content .inner_button .button a:hover {
     background-color: #27273b;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  header .slide1 .content .button i {
+  header .slide1 .content .inner_button .button i {
     font-size: 10vw !important;
   }
 }
@@ -876,7 +876,7 @@ footer .inner_footer .contact .inner_contact ol li {
   font-size: 1vw;
 }
 
-header .slide1 .content .arrow a {
+header .slide1 .content .button .inner_button a {
   background-color: #33334e;
   -webkit-transition: background-color 1s, -webkit-transform 1s;
   transition: background-color 1s, -webkit-transform 1s;
@@ -887,7 +887,7 @@ header .slide1 .content .arrow a {
   font-size: 1.5vw;
 }
 
-header .slide1 .content .arrow a:hover {
+header .slide1 .content .button .inner_button a:hover {
   background-color: #27273b;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
