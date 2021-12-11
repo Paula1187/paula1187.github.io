@@ -663,7 +663,7 @@ body{
   header{
     .slide1{
       .content{
-        .arrow{
+        .button{
           a{
             background-color: #33334e;
             transition: background-color 1s, transform 1s;
@@ -745,6 +745,7 @@ footer{
             padding: 3px 0;
             border-radius: 10px;
             font-size: 1vw;
+            color: white !important;
           }
           .button:hover{
           background-color: #27273b;
