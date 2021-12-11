@@ -601,7 +601,7 @@ body{
     }
     .bottom{
       margin-top: 0 !important;
-      height: 600px !important;
+      height: 650px !important;
       margin-top: -300px !important;
     }
   }
@@ -650,13 +650,12 @@ body{
 .inner_footer a:nth-child(2){grid-area:b2;}
   }
 
-  .bottom{
-    margin-top: 0;
-  }
+
   
   .copy{
     span{
       font-size: 3vw !important;
+      padding: 10vw 0;
     }
   }
 
@@ -769,6 +768,9 @@ footer{
         padding-top: 35px;
         h1{
           font-size: 3vw;
+          border-top: 2px solid #454569;
+          border-right: 2px solid #454569;
+          padding-top: 3vw;
         }
         p{
           font-size: 1.2vw;
@@ -777,6 +779,9 @@ footer{
           font-size: 1.2vw;
         }
         ol{
+          border-left: 2px solid #65659c;
+          border-bottom: 2px solid #65659c;
+          padding-bottom: 3vw;
           li{
             padding-top: 5px;
           }
@@ -790,7 +795,7 @@ footer{
   width: 100%;
   height: 300px;
   background-color: #612759;
-  margin-top: -35vh;
+  margin-top: -38vh;
 }
 
 .copy{
