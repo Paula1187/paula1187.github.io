@@ -396,7 +396,7 @@ body{
           left: 10%;
           z-index: 2;
           img{
-            width: 300px;
+            width: 20vw;
             height: auto;
             z-index: 4;
           }
@@ -541,6 +541,11 @@ body{
         width: 100%;
         min-height: 30vh;
         background-color: #27273c;
+        .project{
+          img{
+            width: 76vw !important;
+          }
+        }
       }
       .slider{
         margin-top: 7vw;
@@ -696,6 +701,7 @@ footer{
         height: 100%;
         background-color: white;
         border-radius: 5%;
+        box-shadow: 1px 1px 20px black;
         form{
           text-shadow: 0;
           h2{
@@ -707,6 +713,7 @@ footer{
             border-color: transparent;
             border-bottom: 1px  solid black;
             font-size: 1vw;
+            text-shadow: none !important;
           }
           .button{
             background-color: #33334e;
@@ -723,6 +730,7 @@ footer{
             width: 80%;
             border: 1px solid black;
             font-size: 1vw;
+            text-shadow: none !important;
           }
         }
       }

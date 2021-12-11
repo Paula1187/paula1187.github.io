@@ -502,7 +502,7 @@ body main a {
 }
 
 .projects .upper_slider .slider .project img {
-  width: 300px;
+  width: 20vw;
   height: auto;
   z-index: 4;
 }
@@ -613,6 +613,9 @@ body main a {
     width: 100%;
     min-height: 30vh;
     background-color: #27273c;
+  }
+  body .projects .upper_slider .project img {
+    width: 76vw !important;
   }
   body .projects .slider {
     margin-top: 7vw;
@@ -764,6 +767,8 @@ footer .inner_footer .form .inner_form {
   height: 100%;
   background-color: white;
   border-radius: 5%;
+  -webkit-box-shadow: 1px 1px 20px black;
+          box-shadow: 1px 1px 20px black;
 }
 
 footer .inner_footer .form .inner_form form {
@@ -780,6 +785,7 @@ footer .inner_footer .form .inner_form form input {
   border-color: transparent;
   border-bottom: 1px  solid black;
   font-size: 1vw;
+  text-shadow: none !important;
 }
 
 footer .inner_footer .form .inner_form form .button {
@@ -803,6 +809,7 @@ footer .inner_footer .form .inner_form form textarea {
   width: 80%;
   border: 1px solid black;
   font-size: 1vw;
+  text-shadow: none !important;
 }
 
 footer .inner_footer .contact .inner_contact {
