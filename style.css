@@ -786,6 +786,7 @@ footer .inner_footer .form .inner_form form input {
   border-bottom: 1px  solid black;
   font-size: 1vw;
   text-shadow: none !important;
+  color: black !important;
 }
 
 footer .inner_footer .form .inner_form form .button {
@@ -810,6 +811,7 @@ footer .inner_footer .form .inner_form form textarea {
   border: 1px solid black;
   font-size: 1vw;
   text-shadow: none !important;
+  color: black !important;
 }
 
 footer .inner_footer .contact .inner_contact {
