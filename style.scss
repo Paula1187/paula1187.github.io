@@ -459,6 +459,15 @@ body{
     }
     .projects{
       height: 23vh;
+      .upper_slider{
+        .slider{
+          .project{
+            img{
+              width: 35vw;
+            }
+          }
+        }
+      }
     }
 
     footer{

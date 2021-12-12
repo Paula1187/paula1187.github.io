@@ -544,6 +544,9 @@ body main a {
   body .projects {
     height: 23vh;
   }
+  body .projects .upper_slider .slider .project img {
+    width: 35vw;
+  }
   body footer {
     padding-top: 10vw;
     width: 90% !important;
