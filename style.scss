@@ -460,13 +460,45 @@ body{
     .projects{
       height: 23vh;
     }
-  }
-  footer{
-    .inner_footer{
-      .form{
-        .inner_form{
-          height: unset !important;
 
+    footer{
+      padding-top: 10vw;
+      width: 90% !important;
+      height: 60vh;
+      .inner_footer{
+        .form{
+          .inner_form{
+            height: unset;
+            width: 80%;
+            form{
+              h2{
+                font-size: 4vw;
+              }
+              input{
+                font-size: 2vw;
+              }
+              .button{
+                font-size: 2vw;
+              }
+              textarea{
+                font-size: 2vw;
+              }
+            }
+  
+          }
+        }
+        .contact{
+          .inner_contact{
+            h1{
+              font-size: 4vw;
+            }
+            p{
+              font-size: 2vw;
+            }
+            a{
+              font-size: 2vw;
+            }
+          }
         }
       }
     }
@@ -474,8 +506,8 @@ body{
 
   
   .bottom{
-    height: 30vh !important;
-    margin-top: -59vh !important;
+    height: 320px !important;
+    margin-top: -18vh !important;
   }
   .copy{
     span{
@@ -587,9 +619,10 @@ body{
         .contact{
           .inner_contact
           {
-            padding-top: 40px;
+            padding-top: 18vw;
             h1{
               font-size: 8vw;
+              border: none;
             }
             p{
               font-size: 4vw;
@@ -598,6 +631,7 @@ body{
               font-size: 4vw;
             }
             ol{
+              border: none;
               li{
                 padding-top: 8px;
                 span{
